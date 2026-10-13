@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore recent nail designs and beauty work from KoKo Nails & Spa in East York, Toronto.">
+  <title>Our Work | KoKo Nails &amp; Spa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/page-transition.css">
+  <script src="assets/page-transition.js" defer></script>
+  <style>
+    :root{--ivory:#f7f4ef;--white:#fff;--brown:#35231e;--muted:#786a63;--gold:#9b7131;--gold-dark:#705326;--line:#ded6ce;--shadow:0 22px 55px rgba(53,35,30,.13);--serif:"Cormorant Garamond",serif;--sans:"Montserrat",sans-serif}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--ivory);color:var(--brown);font-family:var(--sans);font-size:16px;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    img{display:block;max-width:100%}
+    .container{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+    .announcement{position:relative;z-index:100;background:#6f5632;color:#fff;text-align:center;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
+    .announcement .container{min-height:34px;display:flex;align-items:center;justify-content:center;gap:8px}
+    .announcement b{font-weight:700}
+    .nav{position:sticky;top:0;z-index:90;background:rgba(255,250,243,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}
+    .nav-inner{height:88px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .brand{display:flex;align-items:center;gap:13px;min-width:210px}
+    .brand-logo{width:60px;height:60px;object-fit:cover;border-radius:50%;border:2px solid #aa8b58;box-shadow:0 6px 18px rgba(142,90,8,.18)}
+    .brand-copy{line-height:1}
+    .brand-copy strong{display:block;font-family:var(--serif);font-size:1.42rem;letter-spacing:.015em;color:var(--brown)}
+    .brand-copy span{display:block;margin-top:6px;font-size:.57rem;letter-spacing:.23em;text-transform:uppercase;color:var(--gold-dark)}
+    .nav-links{display:flex;align-items:center;gap:30px;font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+    .nav-links a{position:relative;padding:10px 0}
+    .nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:4px;height:1px;background:var(--gold);transition:right .25s ease}
+    .nav-links a:hover::after,.nav-links a[aria-current="page"]::after{right:0}
+    .nav-actions{display:flex;gap:10px}
+    .btn{min-height:52px;padding:0 25px;border-radius:4px;border:1px solid transparent;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:.76rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+    .btn:hover{transform:translateY(-3px)}
+    .btn-gold{color:#fff;background:#80602d;box-shadow:0 10px 26px rgba(60,47,38,.18)}
+    .btn-gold:hover{background:#6f5227;box-shadow:0 14px 32px rgba(60,47,38,.24)}
+    .btn-cream{background:rgba(255,255,255,.7);border-color:rgba(142,90,8,.25);color:var(--brown);backdrop-filter:blur(8px)}
+    .btn-cream:hover{background:#fff;border-color:var(--gold)}
+    .menu-toggle{display:none;flex:0 0 46px;width:46px;height:46px;border:1px solid var(--line);background:#fff;border-radius:50%;align-items:center;justify-content:center;color:var(--brown);cursor:pointer}
+    main{padding:84px 0 100px}
+    .intro{display:grid;grid-template-columns:1fr .7fr;align-items:end;gap:50px;margin-bottom:48px}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:.65rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+    h1{margin-top:12px;font-family:var(--serif);font-size:clamp(3.8rem,7vw,6.6rem);font-weight:600;line-height:.9;letter-spacing:-.045em}
+    .intro p{max-width:500px;padding-bottom:6px;color:var(--muted);font-size:.9rem;line-height:1.8}
+    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card{background:var(--white);border:1px solid var(--line);padding:10px;transition:transform .3s ease,box-shadow .3s ease}
+    .card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+    .media{position:relative;aspect-ratio:4/5;overflow:hidden;background:linear-gradient(145deg,#eae4dd,#fbf9f6);display:grid;place-items:center}
+    .media::before{content:"";position:absolute;inset:18px;border:1px solid rgba(155,113,49,.22)}
+    .media img{position:absolute;z-index:2;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .55s ease}
+    .card:hover .media img{transform:scale(1.035)}
+    .placeholder{font-family:var(--serif);font-size:2.2rem;color:#9a877b}
+    .caption{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 10px 10px}
+    .caption h2{font-family:var(--serif);font-size:1.4rem;font-weight:600}
+    .caption span{color:var(--gold);font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    @media(max-width:1050px){.nav-links{display:none}}
+    @media(max-width:850px){.nav-actions{display:none}.menu-toggle{display:flex}.nav.open .nav-links{display:grid;position:absolute;top:88px;left:0;right:0;padding:22px 20px;background:var(--ivory);border-bottom:1px solid var(--line);gap:5px;box-shadow:0 15px 30px rgba(53,35,30,.1)}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.intro{grid-template-columns:1fr;gap:20px}}
+    @media(max-width:560px){.container{width:min(100% - 28px,1180px)}.announcement{font-size:.62rem;letter-spacing:.09em}.announce-extra{display:none}.nav-inner{height:76px}.brand{min-width:0}.brand-logo{width:50px;height:50px}.brand-copy strong{font-size:1.2rem}.brand-copy span{font-size:.5rem}.nav.open .nav-links{top:76px}.gallery{grid-template-columns:1fr}main{padding:58px 0 82px}h1{font-size:3.8rem}}
+  </style>
+<link rel="stylesheet" href="assets/shared-salon-nav.css">
+</head>
+<body>
+  <div class="shared-notice"><div class="shared-nav-container">Luxury beauty, locally loved &nbsp;&middot;&nbsp; Open 7 days in East York</div></div>
+<nav class="nav shared-nav" id="navigation"><div class="shared-nav-container nav-inner shared-nav-inner">
+  <a class="brand" href="koko-nails-spa-website.html" aria-label="KoKo Nails and Spa home"><img class="brand-logo" src="assets/koko-nails-logo.jpg" alt="KoKo Nails and Spa logo"><span class="brand-copy"><strong>KoKo Nails &amp; Spa</strong><span>East York &middot; Toronto</span></span></a>
+  <div class="nav-links shared-nav-links" id="nav-links"><a href="koko-nails-spa-website.html">Home</a><a href="koko-nails-spa-website.html#experience">About</a><a href="koko-nails-spa-website.html#services">Services</a><a href="koko-nails-our-work.html" aria-current="page">Our Work</a></div>
+  <div class="nav-actions shared-nav-actions"><a class="shared-nav-button" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=1086+Victoria+Park+Ave+East+York+ON+M4B+2K3">Directions</a><a class="shared-nav-button primary" target="_blank" rel="noopener" href="https://www.dashbooking.com/salon/koko-nailseyelashes-spa/booking">Book online</a></div>
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+</div></nav>
+  <main>
+    <div class="container">
+      <div class="intro">
+        <div><span class="eyebrow">Our work</span><h1>Made to be noticed.</h1></div>
+        <p>Explore recent shapes, finishes and creative details from the KoKo team. Replace each placeholder with a real portfolio image when ready.</p>
+      </div>
+      <div class="gallery">
+        <article class="card"><div class="media"><span class="placeholder">img1</span><img src="img1.jpg" alt="KoKo nail design example 1" loading="lazy" onerror="this.remove()"></div><div class="caption"><h2>Nail look 01</h2><span>img1</span></div></article>
+        <article class="card"><div class="media"><span class="placeholder">img2</span><img src="img2.jpg" alt="KoKo nail design example 2" loading="lazy" onerror="this.remove()"></div><div class="caption"><h2>Nail look 02</h2><span>img2</span></div></article>
+        <article class="card"><div class="media"><span class="placeholder">img3</span><img src="img3.jpg" alt="KoKo nail design example 3" loading="lazy" onerror="this.remove()"></div><div class="caption"><h2>Nail look 03</h2><span>img3</span></div></article>
+        <article class="card"><div class="media"><span class="placeholder">img4</span><img src="img4.jpg" alt="KoKo nail design example 4" loading="lazy" onerror="this.remove()"></div><div class="caption"><h2>Nail look 04</h2><span>img4</span></div></article>
+        <article class="card"><div class="media"><span class="placeholder">img5</span><img src="img5.jpg" alt="KoKo nail design example 5" loading="lazy" onerror="this.remove()"></div><div class="caption"><h2>Nail look 05</h2><span>img5</span></div></article>
+        <article class="card"><div class="media"><span class="placeholder">img6</span><img src="img6.jpg" alt="KoKo nail design example 6" loading="lazy" onerror="this.remove()"></div><div class="caption"><h2>Nail look 06</h2><span>img6</span></div></article>
+      </div>
+    </div>
+  </main>
+  <script>
+    const nav = document.getElementById("navigation");
+    const toggle = nav.querySelector(".menu-toggle");
+    toggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
+    });
+    nav.querySelectorAll(".nav-links a").forEach(link => link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }));
+  </script>
+</body>
+</html>

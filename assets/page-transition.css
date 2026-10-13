@@ -1,0 +1,9 @@
+.page-transition{position:fixed;z-index:9999;inset:0;display:grid;place-items:center;background:rgba(247,244,239,.97);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s ease,visibility 0s linear .25s}
+.page-transition-inner{display:grid;justify-items:center;gap:20px;color:#35231e}
+.page-transition-mark{position:relative;width:84px;height:84px;display:grid;place-items:center}
+.page-transition-mark::before{content:"";position:absolute;inset:-8px;border:1px solid rgba(112,83,38,.18);border-top-color:#80602d;border-radius:50%;animation:koko-loader-spin .9s linear infinite}
+.page-transition-mark img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:1px solid rgba(112,83,38,.22);box-shadow:0 12px 32px rgba(53,35,30,.12)}
+.page-transition-label{font-family:"Montserrat",Arial,sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#705326}
+body.page-is-leaving .page-transition{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .25s ease}
+@keyframes koko-loader-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.page-transition-mark::before{animation:none}.page-transition{transition:none}}
